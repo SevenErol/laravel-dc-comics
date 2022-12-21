@@ -1,1 +1,177 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#more {
+    background-color: #0282F9;
+    padding: 0.5rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+#navigation {
+    background-color: white;
+    padding: 1rem;
+
+    nav {
+        color: #1c1c1c;
+        font-weight: bold;
+
+        a:hover {
+            color: #0282F9;
+            transition: 0.4s;
+            border-bottom: 2px solid #0282F9;
+            margin-bottom: -2px;
+        }
+    }
+
+    #search {
+        border: none;
+        border-bottom: 1px solid #0282F9;
+    }
+
+}
+
+#jumbotron {
+    height: 400px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#all_cards {
+    background-color: #1c1c1c;
+
+    .card {
+        border: none;
+    }
+
+    h5 {
+        font-size: 16px;
+        margin-top: 1rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-style: italic;
+
+            &:hover {
+                color: #0282F9;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .centered_button {
+        text-align: center;
+
+        button {
+            padding: 0.5rem 2rem;
+            background-color: #0282F9;
+            color: #ffffff;
+            font-family: 'PT Sans Narrow', sans-serif;
+            margin-bottom: 1rem;
+            border: none;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ffffff;
+                color: #1c1c1c;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .disclaimer {
+        background-color: #0282F9;
+        padding: 0.5rem 1rem;
+        color: #ffffff;
+        position: absolute;
+        transform: translate(0, -50%);
+        bottom: 95%;
+        font-weight: bold;
+    }
+}
+
+#icons_links {
+    background-color: #0282F9;
+    padding: 1rem;
+
+    img {
+        width: 72px;
+
+    }
+
+    #locator {
+        width: 48px;
+    }
+}
+
+#footer_center {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3 {
+        color: white;
+    }
+
+    li {
+        list-style: none;
+        color: lightgray;
+        font-size: 12px;
+        margin: 1rem 0;
+    }
+
+
+    .img_position {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+
+}
+
+#footer_bottom {
+    background-color: #303030;
+    padding: 1rem;
+
+    button {
+        padding: 1rem;
+        border: 2px solid #0282F9;
+        background-color: #303030;
+        color: #ffffff;
+        font-family: 'PT Sans Narrow', sans-serif;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #0282F9;
+            transition: 0.4s;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #0282F9;
+        font-weight: bold;
+    }
+}
