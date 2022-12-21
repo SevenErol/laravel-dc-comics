@@ -20,4 +20,4 @@ Route::get('/', [PageController::class, 'index']);
 Route::get('/about', [PageController::class, 'about']);
 
 
-Route::resource('comics', ComicController::class);
+Route::resource('/index', ComicController::class);
