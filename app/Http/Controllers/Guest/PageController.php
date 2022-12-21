@@ -16,4 +16,9 @@ class PageController extends Controller
 
         return view('welcome', compact('comics'));
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }
