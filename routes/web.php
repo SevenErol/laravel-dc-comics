@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    $comics = config('db.comics');
-
-    return view('welcome', compact('comics'));
-});
+Route::get('/', [PageController::class, 'index']);
