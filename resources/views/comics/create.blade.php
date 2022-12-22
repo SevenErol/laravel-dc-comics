@@ -16,7 +16,7 @@
         </div>
         <div class="mb-3">
             <label for="description">Comic description</label>
-            <textarea class="form-control" placeholder="Leave a description" id="description" name="description"></textarea>
+            <textarea class="form-control" placeholder="Leave a description" id="description" name="description" style="height: 150px"></textarea>
         </div>
         <div class="mb-3">
             <label for="thumb" class="form-label">Comic thumb</label>

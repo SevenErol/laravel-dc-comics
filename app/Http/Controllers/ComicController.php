@@ -81,9 +81,21 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateComicRequest $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $index)
     {
-        //
+
+        $data = [
+            'title' => $request['title'],
+            'description' => $request['description'],
+            'thumb' => $request['thumb'],
+            'price' => $request['price'],
+            'sale_date' => $request['date'],
+            'type' => $request['type']
+        ];
+
+        $index->update($data);
+
+        return to_route('index.show', compact('index'));
     }
 
     /**
