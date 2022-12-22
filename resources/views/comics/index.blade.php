@@ -31,7 +31,7 @@
 
                 @foreach ($comics as $comic)
                 <tr>
-                    <th scope="row">{{ $comic-> id}}</th>
+                    <th scope="row"><a href="{{ route ('index.show', $comic->id)}}">{{ $comic-> id}}</a></th>
                     <td>{{ $comic-> title}}</td>
                     <td>{{ $comic-> description}}</td>
                     <td>{{ $comic-> thumb}}</td>
