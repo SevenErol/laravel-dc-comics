@@ -17,6 +17,7 @@
                     <th scope="col">Series</th>
                     <th scope="col">Sale date</th>
                     <th scope="col">Type</th>
+                    <th scope="col">Edit button</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,6 +32,7 @@
                     <td>{{ $index-> series}}</td>
                     <td>{{ $index-> sale_date}}</td>
                     <td>{{ $index-> type}}</td>
+                    <td><a href="{{ route ('index.edit', $index->id) }}" class="btn btn-primary">Edit</a></td>
                 </tr>
 
             </tbody>
