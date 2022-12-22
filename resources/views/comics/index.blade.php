@@ -3,6 +3,15 @@
 @section('content')
 
 <div class="container p-3">
+
+    <h2 class="text-center">Data table</h2>
+
+    <div class="text-center mb-5">
+
+        <a href="{{ route ('index.create')}}" class="btn btn-primary">Add new Comic</a>
+
+    </div>
+
     <div class="row">
 
         <table class="table table-dark table-striped">
