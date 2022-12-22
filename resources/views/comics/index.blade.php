@@ -38,7 +38,7 @@
                     <td>{{ $comic-> price}}</td>
                     <td>{{ $comic-> series}}</td>
                     <td>{{ $comic-> sale_date}}</td>
-                    <td>{{ $comic-> typeb}}</td>
+                    <td>{{ $comic-> type}}</td>
                 </tr>
                 @endforeach
             </tbody>
