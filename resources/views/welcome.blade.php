@@ -14,7 +14,7 @@
 
                 <div class="card">
 
-                    <a href="#"><img class="card-img-top" src="{{ $comic['thumb']}}"></a>
+                    <a href="{{ route ('about/{id}', ['id' => $comic['id']])}}"><img class="card-img-top" src="{{ $comic['thumb']}}"></a>
 
                 </div>
 
