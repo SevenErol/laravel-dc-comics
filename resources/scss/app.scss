@@ -175,3 +175,18 @@ body {
         font-weight: bold;
     }
 }
+
+.green {
+    background-color: limegreen;
+    color: white;
+
+    .col-4 {
+        border-left: 1px solid gray;
+
+        .ms_btn {
+            color: white;
+        }
+    }
+
+
+}
