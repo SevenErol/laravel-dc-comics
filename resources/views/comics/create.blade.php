@@ -7,36 +7,46 @@
 
     <h1 class="text-center">Complete the form to add a new Comic</h1>
 
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <form action="{{ route ('index.store') }}" method="post">
 
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Comic title</label>
-            <input type="text" class="form-control" id="title" name="title">
+            <input type="text" class="form-control" id="title" name="title" value="{{old('title')}}">
         </div>
         <div class="mb-3">
             <label for="description">Comic description</label>
-            <textarea class="form-control" placeholder="Leave a description" id="description" name="description" style="height: 150px"></textarea>
+            <textarea class="form-control" placeholder="Leave a description" id="description" name="description" style="height: 150px">{{old('description')}}</textarea>
         </div>
         <div class="mb-3">
             <label for="thumb" class="form-label">Comic thumb</label>
-            <input type="url" class="form-control" id="thumb" name="thumb">
+            <input type="url" class="form-control" id="thumb" name="thumb" value="{{old('thumb')}}">
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Comic price</label>
-            <input type="text" class="form-control" id="price" name="price">
+            <input type="text" class="form-control" id="price" name="price" value="{{old('price')}}">
         </div>
         <div class="mb-3">
             <label for="serie" class="form-label">Comic series</label>
-            <input type="text" class="form-control" id="serie" name="serie">
+            <input type="text" class="form-control" id="serie" name="serie" value="{{old('serie')}}">
         </div>
         <div class="mb-3">
             <label for="date" class="form-label">Comic sale date</label>
-            <input type="date" class="form-control" id="date" name="date">
+            <input type="date" class="form-control" id="date" name="date" value="{{old('date')}}">
         </div>
         <div class="mb-3">
             <label for="type" class="form-label">Comic type</label>
-            <input type="text" class="form-control" id="type" name="type">
+            <input type="text" class="form-control" id="type" name="type" value="{{old('type')}}">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

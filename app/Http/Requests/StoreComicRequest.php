@@ -24,7 +24,13 @@ class StoreComicRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|unique:comics,title|min:5|max:50',
+            'description' => 'required',
+            'thumb' => 'required',
+            'price' => 'required|max:50',
+            'serie' => 'required|max:50',
+            'date' => 'required',
+            'type' => 'required|max:50'
         ];
     }
 }

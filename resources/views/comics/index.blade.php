@@ -35,7 +35,7 @@
                     <th scope="row"><a href="{{ route ('index.show', $comic->id)}}">{{ $comic-> id}}</a></th>
                     <td>{{ $comic-> title}}</td>
                     <td>{{ $comic-> description}}</td>
-                    <td>{{ $comic-> thumb}}</td>
+                    <td><img src="{{ $comic-> thumb}}" alt=""></td>
                     <td>{{ $comic-> price}}</td>
                     <td>{{ $comic-> series}}</td>
                     <td>{{ $comic-> sale_date}}</td>
