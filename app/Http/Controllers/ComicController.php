@@ -95,7 +95,7 @@ class ComicController extends Controller
 
         $index->update($data);
 
-        return to_route('index.show', compact('index'));
+        return to_route('index.index');
     }
 
     /**

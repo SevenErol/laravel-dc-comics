@@ -7,6 +7,8 @@
 
     <h1 class="text-center">Update the form to change a data</h1>
 
+    @include('partials.error')
+
     <form action="{{ route ('index.update', $index->id) }}" method="post">
 
         @csrf

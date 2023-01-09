@@ -7,15 +7,7 @@
 
     <h1 class="text-center">Complete the form to add a new Comic</h1>
 
-    @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-    @endif
+    @include('partials.error')
 
     <form action="{{ route ('index.store') }}" method="post">
 
